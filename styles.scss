@@ -36,13 +36,25 @@ $grey: #A6A6A6;
 
 /* GENERIC STYLES */
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 ul li {
 	list-style: none;
+    font-size: 1.05em;
+    font-weight: 300;
 }
 
 h1 {
 	font-size: 3em;
-	line-height: 1.5em;
+	line-height: 1.2em;
 	font-weight: 300;
 }
 
@@ -59,6 +71,11 @@ p {
 	line-height: 1.5em;
 	font-weight: 100;
   font-style: normal;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
 }
 
 body {
@@ -79,9 +96,9 @@ body {
 		padding: 0;
 		top: 0;
 		left: 0;
-		width: 98vw;
+		width: 98.6vw;
 		height: 100%;
-		border: 1vw solid white;
+		border: 0.7vw solid white;
 		margin-right: 1vw;
 	}
 }
@@ -101,6 +118,8 @@ a {
 	transition: background 1s;
 	cursor: pointer;
 	font-weight: 300;
+    font-size: 20px;
+    -webkit-appearance: none;
 	&:hover {
 		background: $dark-pink;
 	}
@@ -118,7 +137,7 @@ header {
 	position: relative;
 	color: white;
 	background: $teal;
-	overflow-y: hidden;
+	overflow: hidden;
 	nav {
 		width: 100%;
 		ul {
@@ -132,6 +151,7 @@ header {
 				a {
 					text-decoration: none;
 					color: inherit;
+                    font-size: 1.1em;
 					cursor: pointer;
 				}
 			}
@@ -147,13 +167,32 @@ header {
 		padding: 0 5%;
 	}
 
+    p {
+        font-size: 1.3em;
+    }
+
 	#header-left {
-		img {
-			zoom: 60%;
-			min-width: 350px;
+
+		.vid_container {
+			zoom: 75%;
+			width: 520px; height: 840px;
 			/*justify-content: flex-end;*/
 			margin-left: auto;
+            position: relative;
 		}
+
+        img {
+            position: absolute;
+            top: 0px; right: 0px;
+            width: 100%; height: 100%;
+            float: left;
+        }
+
+        video {
+            width: 418px;
+            position: absolute;
+            top: 121px; right: 52px;
+        }
 
 		h1 {
 			font-size: 2em;
@@ -200,11 +239,11 @@ main {
 					height: 40vw;
 					background: white;
 					padding: 4em 2em;
-					box-shadow: 0px 10px 30px -5px grey;
+					box-shadow: 0px 5px 35px -5px rgba(0,0,0,0.3);
 
 					h2 {
 						color: $pink;
-						font-size: 4em;
+						font-size: 6em;
 						margin: 0;
 					}
 
@@ -239,6 +278,7 @@ main {
 
 			#screens {
 				width: 100%;
+                max-width: 800px;
 				position: sticky;
 				top: 15vh;
 				bottom: 15vh;
@@ -282,34 +322,31 @@ main {
 				h2 {
 					font-weight: 300;
 					line-height: 1.5em;
+                    font-size: 2em;
 					span {
 						display: inline-block;
 						width: 1.6em;
 						height: 1.6em;
 						color: white;
 						text-align: center;
-						line-height: 1.6em;
+						line-height: 1.7em;
 						background: $number-blue;
 						border-radius: 50%;
-						font-size: 0.8em;
+						font-size: 0.7em;
 						vertical-align: top;
+                        margin-top: 4px; margin-right: 4px;
 					}
 				}
 				p {
 					color: $grey;
-				}
-			}
-			#step4 {
-				color: $pink;
-				span {
-					background: $pink;
+                    max-width: 350px;
 				}
 			}
 		}
 	}
 
-	#steps-mobile { 
-		display: none; 
+	#steps-mobile {
+		display: none;
 		position: relative;
 		#steps-slider {
 			width: 400%;
@@ -333,14 +370,13 @@ main {
 					background: $number-blue;
 					border-radius: 50%;
 					font-size: 0.8em;
+                    margin-right: 4px;
 				}
 				p {
 					color: $grey;
-				}
-			}
-			#step4 {
-				span {
-					background: $pink;
+                    font-size: 1.1em;
+                    max-width: 260px;
+                    margin: 0 auto;
 				}
 			}
 		}
@@ -353,15 +389,17 @@ main {
 			top: 4.5em;
 			font-size: 3em;
 			color: $blue;
-			a { 
+			img {
 				position: absolute;
 				display: block;
+                zoom: 0.8;
+                top: 20%;
 				cursor: pointer;
 				&:first-of-type {
-					left: 0;
+					left: 20px;
 				}
 				&:nth-of-type(2) {
-					right: 0em;
+					right: 20px;
 				}
 			}
 		}
@@ -369,6 +407,7 @@ main {
 
 		#screens {
 			width: 100%;
+            margin-bottom: 70px;
 			#browser-wrapper {
 				width: 100%;
 				position: relative;
@@ -404,6 +443,40 @@ main {
 			color: white;
 		}
 
+        p {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        span {
+            font-weight: 100;
+            font-size: 0.9em;
+        }
+
+        .capture_form {
+            width: 90%;
+            max-width: 350px;
+            margin: 40px auto 20px;;
+            input {
+                box-sizing: border-box;
+                width: 100%;
+                border: 0; border-radius: 5px;
+                font-size: 1em;
+                margin-top: 7px;
+                padding: 10px;
+                &:focus {outline:0}
+                &::placeholder {
+                    color: rgba(0,0,0,0.25);
+                }
+            }
+            .button {
+                border: 0;
+                font-family: "Graphik", sans-serif;
+                width: 100%;
+                margin-top: 20px;
+                font-size: 1.3em; padding: 0.8em;
+            }
+        }
+
 		#transaction {
 			background: $dark-teal;
 			width: 10vw;
@@ -438,8 +511,9 @@ footer {
 		display: inline-block;
 	}
 	#footer-left {
-		text-align: center;
+		text-align: left;
 		float: left;
+        font-size: 0.9em;
 		p {
 			color: $grey;
 		}
@@ -474,67 +548,67 @@ footer {
 }
 
 #rect1 {
-	width: 100px;
-	height: 100px;
+	width: 350px;
+	height: 350px;
 	top: 10%;
-	left: 0;
+	left: -310px;
 	animation: rotateRL 40s infinite;
 }
 
 #rect2 {
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 400px;
 	bottom: 10%;
-	right: 0;
+	right: -300px;
 	animation: rotateLR 60s infinite;
 }
 
 #rect3 {
-	width: 150px;
-	height: 150px;
-	top: 10%;
-	left: 0;
+	width: 250px;
+	height: 250px;
+	top: 20%;
+	left: -100px;
 	animation: rotateRL 40s infinite;
 }
 
 #rect4 {
-	width: 200px;
-	height: 200px;
-	bottom: 10%;
-	right: 0;
+	width: 500px;
+	height: 500px;
+	bottom: -10%;
+	right: -300px;
 	animation: rotateLR 30s infinite;
 }
 
 #rect5 {
-	width: 300px;
-	height: 300px;
+	width: 400px;
+	height: 400px;
 	bottom: 30%;
 	left: 20%;
 	animation: rotateLR 30s infinite;
 }
 
 @keyframes rotateRL {
-	0% { 
+	0% {
 		transform: rotate(7deg);
-	}	
+	}
 	50% {
 		transform: rotate(187deg);
 	}
-	100% { 
+	100% {
 		transform: rotate(-7deg);
-	}		
+	}
 }
 
 @keyframes rotateLR {
-	0% { 
+	0% {
 		transform: rotate(-7deg);
-	}	
+	}
 	50% {
 		transform: rotate(-187deg);
 	}
-	100% { 
+	100% {
 		transform: rotate(-7deg);
-	}		
+	}
 }
 
 
@@ -653,20 +727,20 @@ footer {
 
 		#features {
 			table {
-				border-collapse: collapse; 
+				border-collapse: collapse;
 				width: 100%;
 				td {
 					height: 100% !important;
 					.card {
-						width: 80vw;
-						height: 80vw !important;
+						width: 90vw;
+						height: 90vw !important;
 						margin: 0 auto;
-						margin-bottom: 15px;
+						margin-bottom: 25px;
 						h2 {
 							font-size: 7em;
 						}
 						p {
-							font-size: 1.5em;
+							font-size: 1.2em;
 						}
 					}
 				}
@@ -692,6 +766,10 @@ footer {
 
 @media all and (max-width: 768px) {
 
+    .desktop-only {
+        display: none;
+    }
+
 	#body-border {
 		display: none;
 	}
@@ -700,10 +778,22 @@ footer {
 		overflow-x: hidden;
 	}
 
+    nav {
+        ul {
+            padding: 20px 0 !important;
+            zoom: 0.85;
+        }
+    }
+
 	section {
 		padding: 0;
 	}
-	
+
+    section h1 {
+        margin: 3.2rem auto;
+        font-size: 2.3em;
+    }
+
 	h3 {
 		font-size: 1.2em;
 	}
@@ -711,35 +801,69 @@ footer {
 	p {
 		font-size: 1em;
 	}
-	main {
+    header {
+        p {
+            font-size: 1.2em;
+        }
+    }
+    #header-left {
+        padding: 0px;
+        .vid_container {
+            zoom: 70% !important;
+            margin-right: auto;
+            padding: 0px;
+        }
+    }
+    #header-right {
+        h1 {
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+    }
 
+    .rect {
+        zoom: 0.6;
+    }
+
+	main {
 		#features {
+            overflow-y: hidden;
+            padding: 5% 10px !important;
 			table {
 				td {
 					.card {
-						padding: 1em;
-    				padding-top: 1.5em;
+						padding: 1.3em;
+    			    	padding-top: 1.5em;
 						h2 {
-							font-size: 3em;
+							font-size: 5em;
+                            margin: 0.3em auto;
 						}
 						h3 {
-							font-size: 1.5em;
+							font-size: 1.6em;
+                            margin: 10px 0;
 						}
 						p {
-							font-size: 0.8em;
+							font-size: 1.1em;
+                            margin: 0;
 						}
 					}
 				}
 			}
 		}
 	}
+
+    footer {
+        #footer-left {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
 }
 
-@media all and (min-width: 1366px) { 
-	#header-left {
-		img {
-			zoom: 80%;
-		}
-	}
+@media all and (min-width: 1366px) {
+	// #header-left {
+	// 	.vid_container {
+	// 		zoom: 70%;
+	// 	}
+	// }
 }
-

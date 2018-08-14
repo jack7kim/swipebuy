@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	insertConfetti();
 
 	$(window).scroll(function() {
-		if($("#steps-desktop").css("display") === "none") { 
+		if($("#steps-desktop").css("display") === "none") {
 			return; }
 		var browserTop = $("#screens").offset().top;
 
@@ -11,7 +11,7 @@ $( document ).ready(function() {
 		var screen2Top = $("#step2").offset().top;
 		var screen3Top = $("#step3").offset().top;
 		var screen4Top = $("#step4").offset().top;
-		var margin = 80;
+		var margin = 110;
 
 		// default settings
 		$("#browser").css("opacity", 1);
@@ -23,7 +23,7 @@ $( document ).ready(function() {
 			$("#screen1").css("opacity", 1);
 		} else if (browserTop <= screen3Top - margin) {
 			$("#screen2").css("opacity", 1);
-		} else if (browserTop <= screen4Top - margin * 3) {
+		} else if (browserTop <= screen4Top - margin * 2) {
 			$("#screen3").css("opacity", 1);
 		} else {
 			$("#browser").css("opacity", 0);

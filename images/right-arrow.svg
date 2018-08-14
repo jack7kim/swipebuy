@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="50px" viewBox="0 0 28 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>right-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-8-Plus" transform="translate(-489.000000, -2421.000000)" fill-rule="nonzero" fill="#4A90E2">
+            <g id="right-arrow" transform="translate(489.000000, 2421.000000)">
+                <path d="M0.971098266,49.0163934 C1.61849711,49.6721311 2.42774566,50 3.31791908,50 C4.12716763,50 5.01734104,49.6721311 5.66473988,49.0163934 L27.0289017,27.3770492 C27.6763006,26.7213115 28,25.9016393 28,25 C28,24.0983607 27.6763006,23.2786885 27.0289017,22.6229508 L5.66473988,0.983606557 C4.3699422,-0.327868852 2.26589595,-0.327868852 0.971098266,0.983606557 C-0.323699422,2.29508197 -0.323699422,4.42622951 0.971098266,5.73770492 L19.9884393,25 L0.971098266,44.2622951 C-0.323699422,45.5737705 -0.323699422,47.704918 0.971098266,49.0163934 L0.971098266,49.0163934 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

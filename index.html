@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SwipeBuy</title>
+	<title>Swipebuy | Sell through Snapchat &amp; Instagram Stories</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<meta name="google-site-verification" content="qdrmG2lc_cnhuQ8GF5_co5-QGne3b3GAtegAZablUt8" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Swipebuy lets you sell through Snapchat &amp; Instagram Stories.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Swipebuy | Swipe to sale in 60 seconds.">
+    <meta property="og:description" content="Swipebuy lets you sell through Snapchat &amp; Instagram Stories.">
+    <meta property="og:url" content="http://swipebuy.co/">
+    <meta property="og:site_name" content="Swipebuy">
+    <meta property="og:image" content="http://swipebuy.co/images/poster.png">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109139967-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-109139967-2');
+	</script>
+	<!-- Start of Async Drift Code -->
+	<script>
+	!function() {
+	  var t;
+	  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+	  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+	  t.factory = function(e) {
+	    return function() {
+	      var n;
+	      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+	    };
+	  }, t.methods.forEach(function(e) {
+	    t[e] = t.factory(e);
+	  }), t.load = function(t) {
+	    var e, n, o, i;
+	    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+	    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+	    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+	  });
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('uwnap5947yi2');
+	</script>
+	<!-- End of Async Drift Code -->
 </head>
 <body>
 	<div id="body-border"></div>
@@ -13,23 +57,28 @@
 		<nav>
 			<ul>
 				<li class="nav-link">
-					<a onclick="goToByScroll('#features')">What it does</a>
+					<a onclick="goToByScroll('#features')">What It Does</a>
 				</li>
 				<li><img src="images/logo.png" class="logo"></li>
 				<li class="nav-link">
-					<a onclick="goToByScroll('#steps-desktop')">How it works</a>
+					<a onclick="goToByScroll('#steps-desktop')">How It Works</a>
 				</li>
 			</ul>
 		</nav>
 		<div id="header-left">
-			<img src="images/iphone.png">
+			<div class="vid_container">
+				<img src="images/iphone.png">
+				<video autoplay muted loop>
+					<source src="images/demo.mp4" type="video/mp4">
+				</video>
+			</div>
 		</div>
 		<div id="header-right">
 			<h1>Swipe to sale<br/> in 60 seconds.</h1>
 			<p>
-				Sell products through Snap & IG <br/>Stories like a piece of cake.
+				Sell products through Snap &amp; IG <br class="desktop-only"/>Stories like a piece of cake.
 			</p>
-			<a href class="button">Try for free</a>
+			<a onclick="goToByScroll('#pricing')" class="button">Try for free</a>
 		</div>
 	</header>
 
@@ -46,7 +95,7 @@
 							<h2>2x</h2>
 							<h3>More Conversions</h3>
 							<p>
-								Products sold through Swipebuy achieve 200% more sales than traditional mobile websites. For real.
+								Products sold through Swipebuy achieve up to 2X more sales than traditional mobile websites.
 							</p>
 						</div>
 					</td>
@@ -64,10 +113,10 @@
 				<tr>
 					<td>
 						<div class="card">
-							<h2>&infin;</h2>
+							<h2 style="font-family:Helvetica, sans-serif; transform: scale(1.5);">&infin;</h2>
 							<h3>More Personal</h3>
 							<p>
-								Infinitely more personal than navigating a static website. Extend your brand. Build a personality.
+								Infinitely more personal than navigating a static storefront. Extend your brand. Build a personality.
 							</p>
 						</div>
 					</td>
@@ -76,7 +125,7 @@
 							<h2>3x</h2>
 							<h3>More Impulsive</h3>
 							<p>
-								Convert customers on the spot through… 
+								Convert spur of the moment purchases by eliminating decision making.
 							</p>
 						</div>
 					</td>
@@ -149,15 +198,17 @@
 					</p>
 				</div>
 				<div id="step4" class="step">
-					<h2><span>4</span> Post & Sell</h2>
+					<h2><span>4</span> Post &amp; Sell</h2>
 					<p>
 						Share the link on your Snapchat or IG Story and see the orders flow in. Pour yourself a glass.
 					</p>
 				</div>
 			</div>
 			<div id="mobile-steps-nav">
-				<a id="prevStepMobile"><</a>
-				<a id="nextStepMobile">></a>
+				<!-- <a id="prevStepMobile"><</a>
+				<a id="nextStepMobile">></a> -->
+				<img id="prevStepMobile" src="images/left-arrow.svg">
+				<img id="nextStepMobile" src="images/right-arrow.svg">
 			</div>
 			<div id="screens">
 				<div id="browser-wrapper">
@@ -173,15 +224,26 @@
 
 		<section id="pricing">
 			<h1>See for yourself.</h1>
-			<div id="transaction">
+			<p>
+				Try Swipebuy for 2 weeks free and see the results for yourself. Or your money back.*
+			</p>
+			<form class="capture_form" action="https://formspree.io/hello@swipebuy.co" method="POST" target="_blank">
+			    <input type="text" name="name" placeholder="Name">
+			    <input type="email" name="_replyto" placeholder="Email">
+				<input type="text" name="company" placeholder="Company">
+			    <input type="submit" value="Try for free" class="button">
+			</form>
+			<!-- <div id="transaction">
 				<div>
 					<h2>2.5%</h2>
 					<small>per<br/>transaction</small>
 				</div>
 			</div>
 
-			<p>We’ll waive the fee for 2 weeks and let you see the results for yourself. Try for free today.</p>
-			<a href class="button">Try for free</a>
+			<p>We'll waive the fee for 2 weeks and let you see the results for yourself. Try for free today.</p>
+			<a href class="button">Try for free</a> -->
+			<br>
+			<span>*Didn't you read? It's free!</span>
 		</section>
 
 	</main>
@@ -189,21 +251,21 @@
 	<footer>
 		<div id="footer-left">
 			<img src="images/logo.png" class="logo">
-			<p>Swipebuy, Inc.</p>
+			<!-- <p>Swipebuy, Inc.</p> -->
 		</div>
 		<div id="footer-right">
 			<table>
 				<tr>
 					<td><a href="">About</a></td>
-					<td><a href="">Instagram</a></td>
+					<td><a href="https://www.instagram.com/swipebuy.co/" target="_blank">Instagram</a></td>
 				</tr>
 				<tr>
-					<td><a href="">Contact</a></td>
+					<td><a href="mailto:hello@swipebuy.co">Contact</a></td>
 					<td><a href="">Snapchat</a></td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td><a href="">Privacy</a></td>
-				</tr>
+				</tr> -->
 			</table>
 		</div>
 	</footer>
